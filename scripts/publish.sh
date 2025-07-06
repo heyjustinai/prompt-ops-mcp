@@ -58,4 +58,4 @@ npm publish
 
 echo "✅ Successfully published $PACKAGE_NAME@$PACKAGE_VERSION!"
 echo "🎉 Package is now available via: npm install -g $PACKAGE_NAME"
-echo "📚 Documentation: https://github.com/yourusername/prompt-ops-mcp" 
+echo "📚 Documentation: https://github.com/heyjustinai/prompt-ops-mcp" 

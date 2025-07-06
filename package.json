@@ -8,7 +8,7 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "dev": "tsx src/index.ts",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "lint": "eslint src/**/*.ts",
     "format": "prettier --write src/**/*.ts",
     "prepare": "npm run build"
@@ -55,10 +55,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/justinai/prompt-ops-mcp.git"
+    "url": "https://github.com/heyjustinai/prompt-ops-mcp.git"
   },
   "bugs": {
-    "url": "https://github.com/justinai/prompt-ops-mcp/issues"
+    "url": "https://github.com/heyjustinai/prompt-ops-mcp/issues"
   },
-  "homepage": "https://github.com/justinai/prompt-ops-mcp#readme"
+  "homepage": "https://github.com/heyjustinai/prompt-ops-mcp#readme"
 }
