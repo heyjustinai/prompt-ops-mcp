@@ -71,22 +71,22 @@ This tool uses a meta-prompting approach where the LLM does the actual optimizat
 
       try {
         switch (name) {
-          case 'promptenhancer': {
-            const validatedArgs = OptimizePromptArgsSchema.parse(args);
-            const result = await this.optimizer.optimizePrompt(validatedArgs as OptimizePromptArgs);
+        case 'promptenhancer': {
+          const validatedArgs = OptimizePromptArgsSchema.parse(args);
+          const result = await this.optimizer.optimizePrompt(validatedArgs as OptimizePromptArgs);
             
-            return {
-              content: [
-                {
-                  type: 'text',
-                  text: result.content,
-                },
-              ],
-            };
-          }
+          return {
+            content: [
+              {
+                type: 'text',
+                text: result.content,
+              },
+            ],
+          };
+        }
 
-          default:
-            throw new McpError(ErrorCode.MethodNotFound, `Unknown tool: ${name}`);
+        default:
+          throw new McpError(ErrorCode.MethodNotFound, `Unknown tool: ${name}`);
         }
       } catch (error) {
         if (error instanceof z.ZodError) {
