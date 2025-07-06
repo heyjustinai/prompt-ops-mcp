@@ -1,0 +1,64 @@
+{
+  "name": "prompt-ops-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for intelligent prompt optimization using meta-prompting techniques",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "jest",
+    "lint": "eslint src/**/*.ts",
+    "format": "prettier --write src/**/*.ts",
+    "prepare": "npm run build"
+  },
+  "bin": {
+    "prompt-ops-mcp": "dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "prompt-optimization",
+    "ai",
+    "llm",
+    "cursor",
+    "meta-prompting"
+  ],
+  "author": "justinai",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0",
+    "commander": "^12.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "eslint": "^8.56.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "dist/",
+    "README.md",
+    "LICENSE",
+    "example-usage.md",
+    "example-two-turn.md",
+    "examples/"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justinai/prompt-ops-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/justinai/prompt-ops-mcp/issues"
+  },
+  "homepage": "https://github.com/justinai/prompt-ops-mcp#readme"
+}

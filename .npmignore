@@ -1,0 +1,48 @@
+# Source files (users only need compiled dist/)
+src/
+tsconfig.json
+
+# Development configuration
+.eslintrc.json
+.prettierrc
+.vscode/
+.idea/
+
+# Build tools and scripts
+scripts/
+*.tsbuildinfo
+
+# Documentation (internal development)
+docs/
+
+# Development dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+
+# Git files
+.git/
+.gitignore
+
+# Environment files
+.env*
+
+# Test files (if any)
+test/
+tests/
+__tests__/
+*.test.ts
+*.test.js
+*.spec.ts
+*.spec.js
+
+# Coverage
+coverage/
+*.lcov 
